@@ -1,0 +1,4 @@
+fix/*
+fix*.tgz
+build/*
+*.mod
