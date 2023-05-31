@@ -29,7 +29,6 @@ FCFLAGS="\
 -Wall \
 -Wconversion \
 -mieee-fp \
--fbounds-check \
 -std=f2008"
 if [[ "$(uname -m)" == "arm64"  ]] ; then 
     FCFLAGS=$(echo $FCFLAGS | sed 's/-mieee-fp//g') # remove -mieee-fp flag for arm (i.e.,apple silicon) gfortran

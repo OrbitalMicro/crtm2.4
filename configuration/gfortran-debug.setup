@@ -19,7 +19,6 @@ fi
 export OMP_NUM_THREADS=4  #set here for testing purposes, probably want to override this
 
 FCFLAGS="\
--fbounds-check \
 -mieee-fp \
 -fimplicit-none \
 -ffpe-trap=overflow,zero,invalid \
