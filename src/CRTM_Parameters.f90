@@ -276,7 +276,7 @@ MODULE CRTM_Parameters
   
  
   !#----------------------------------------------------------------------------#
-  !#            -- GOCART Aerosol Parameters                      --            #
+  !#            -- CRTM Aerosol Parameters                        --            #
   !#----------------------------------------------------------------------------#
   INTEGER, PUBLIC, PARAMETER ::        INVALID_AEROSOL = 0
   INTEGER, PUBLIC, PARAMETER ::           DUST_AEROSOL = 1
