@@ -20,6 +20,7 @@ export OMP_NUM_THREADS=4  #set here for testing purposes, probably want to overr
 
 FCFLAGS="\
 -O3 \
+-fbounds-check \
 -fimplicit-none \
 -ffree-form \
 -fno-second-underscore \
