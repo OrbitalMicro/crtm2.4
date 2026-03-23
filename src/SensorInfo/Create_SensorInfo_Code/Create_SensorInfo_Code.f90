@@ -81,6 +81,7 @@ PROGRAM Create_SensorInfo_Code
   INTEGER, PARAMETER :: WMO_ATMS      = 621
   INTEGER, PARAMETER :: WMO_IMGR_JMA  = 294  ! MTSAT-1R
   INTEGER, PARAMETER :: WMO_SSMIS     = 908
+  INTEGER, PARAMETER :: WMO_MINIRAD03 = INVALID_WMO_SENSORID
 
   TYPE(SensorMap), PARAMETER, DIMENSION(N_WMO_SENSORS) :: WMO_SensorMap = &
   (/ SensorMap(WMO_HIRS2    , 'WMO_HIRS2    ',56), &
@@ -110,7 +111,8 @@ PROGRAM Create_SensorInfo_Code
      SensorMap(WMO_WINDSAT  , 'WMO_WINDSAT  ',-1), &
      SensorMap(WMO_IMGR_JMA , 'WMO_IMGR_JMA ',-1), &
      SensorMap(WMO_ATMS     , 'WMO_ATMS     ',-1), &
-     SensorMap(WMO_SSMIS    , 'WMO_SSMIS    ',-1) /)
+     SensorMap(WMO_SSMIS    , 'WMO_SSMIS    ',-1), &
+     SensorMap(WMO_MINIRAD03, 'WMO_MINIRAD03',-1) /)
 
   ! WMO SATELLITE codes from COMMON CODE TABLE C-5
   INTEGER, PARAMETER :: INVALID_WMO_SATELLITEID = 1023
@@ -166,6 +168,8 @@ PROGRAM Create_SensorInfo_Code
   INTEGER, PARAMETER :: WMO_GMS3       = 150
   INTEGER, PARAMETER :: WMO_GMS4       = 151
   INTEGER, PARAMETER :: WMO_GMS5       = 152
+  INTEGER, PARAMETER :: WMO_GEMSA      = 1120
+  INTEGER, PARAMETER :: WMO_GEMSB      = 1121
 
   TYPE(SatelliteMap), PARAMETER, DIMENSION(N_WMO_SATELLITES) :: WMO_SatelliteMap = &
   (/SatelliteMap(WMO_NOAA05, 'WMO_NOAA05    '), SatelliteMap(WMO_GOES11    , 'WMO_GOES11    '), &
@@ -192,7 +196,8 @@ PROGRAM Create_SensorInfo_Code
     SatelliteMap(WMO_METEOSAT11, 'WMO_METEOSAT11'), SatelliteMap(WMO_METOPA,     'WMO_METOPA    '), &
     SatelliteMap(WMO_METOPB,     'WMO_METOPB    '), SatelliteMap(WMO_METOPC,     'WMO_METOPC    '), &
     SatelliteMap(WMO_MTSAT1R,    'WMO_MTSAT1R   '), SatelliteMap(WMO_GMS3,       'WMO_GMS3      '), &
-    SatelliteMap(WMO_GMS4,       'WMO_GMS4      '), SatelliteMap(WMO_NOAA19,     'WMO_NOAA19    ') /)
+    SatelliteMap(WMO_GMS4,       'WMO_GMS4      '), SatelliteMap(WMO_NOAA19,     'WMO_NOAA19    '), &
+    SatelliteMap(WMO_GEMSA,      'WMO_GEMSA     '), SatelliteMap(WMO_GEMSB,      'WMO_GEMSB     ') /)
 
   
   ! ---------
