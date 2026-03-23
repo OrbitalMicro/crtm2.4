@@ -1566,6 +1566,30 @@ CONTAINS
         local_WMO_Satellite_Id = 784
         local_SensorName       = 'AIRS'
         local_SatelliteName    = 'Aqua'
+      CASE('minirad03_gems1-IOD')
+        local_nChannels        = 12
+        local_nFOVs            = -1
+        local_Detector         = -1
+        local_WMO_Sensor_Id    = -1
+        local_WMO_Satellite_Id = -1
+        local_SensorName       = 'MiniRad03-D'
+        local_SatelliteName    = 'GEMS1-IOD'
+      CASE('minirad03_gems2a')
+        local_nChannels        = 24
+        local_nFOVs            = -1
+        local_Detector         = -1
+        local_WMO_Sensor_Id    = -1
+        local_WMO_Satellite_Id = 1120
+        local_SensorName       = 'MiniRad03-E'
+        local_SatelliteName    = 'GEMS2A'
+      CASE('minirad03_gems2b')
+        local_nChannels        = 24
+        local_nFOVs            = -1
+        local_Detector         = -1
+        local_WMO_Sensor_Id    = -1
+        local_WMO_Satellite_Id = 1121
+        local_SensorName       = 'MiniRad03-F'
+        local_SatelliteName    = 'GEMS2B'
       CASE DEFAULT
         Error_Status=FAILURE
         CALL Display_Message( ROUTINE_NAME, &
